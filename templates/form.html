@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>User Story Manager {{ name }}</title>
+    </head>
+    <body>
+        <form method="post">
+            <h2>User Story Manager {{ name }}</h2>
+            <label for="story_title">Story title</label> <br>
+            <input type="text" id="story_title" name='story_title' required><br>
+            <label for="user_story">User Story</label> <br>
+            <input type="text" id="user_story" name='user_story' required><br>
+            <label for="accept_criteria">Acceptance Criteria</label> <br>
+            <input type="text" id="accept_criteria" name='accept_criteria' required><br>
+            <label for="business_value">Business Value</label> <br>
+            <input type="number" min=100 max=1500 step=100 id="business_value" name='business_value' required><br>
+            <label for="estimation">Estimation (h)</label> <br>
+            <input type="number" min=0.5 max=40 step=0.5 id="estimation" name='estimation' required><br>
+            <label for="status">Status</label> <br>
+            <select id="status" name="status">
+                  <option value="planning">Planning</option>
+                  <option value="todo">To Do</option>
+                  <option value="in_progress">In Progress</option>
+                  <option value="review">Review</option>
+                  <option value="done">Done</option>
+            </select> <br><br>
+            <input type="submit" value="submit">
+        </form>
+
+    </body>
+</html>
