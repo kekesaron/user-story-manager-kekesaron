@@ -9,11 +9,11 @@
         <form method="post">
             <h2>User Story Manager {{ name }}</h2>
             <label for="story_title">Story title</label> <br>
-            <input type="text" id="story_title" name='story_title' required><br>
+            <textarea name="story_title" id="story_title" cols="60" rows="1" required></textarea><br>
             <label for="user_story">User Story</label> <br>
-            <input type="text" id="user_story" name='user_story' required><br>
+            <textarea name="user_story" id="user_story" cols="60" rows="4" required></textarea><br>
             <label for="accept_criteria">Acceptance Criteria</label> <br>
-            <input type="text" id="accept_criteria" name='accept_criteria' required><br>
+            <textarea name="accept_criteria" id="accept_criteria" cols="60" rows="6" required></textarea><br>
             <label for="business_value">Business Value</label> <br>
             <input type="number" min=100 max=1500 step=100 id="business_value" name='business_value' required><br>
             <label for="estimation">Estimation (h)</label> <br>
