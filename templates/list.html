@@ -15,6 +15,8 @@
                 <td>Business Value</td>
                 <td>Estimation</td>
                 <td>Status</td>
+                <td>Edit user story</td>
+                <td>Delete user story</td>
             </tr>
             {% if user_stories %}
             {% for story in user_stories %}
@@ -26,6 +28,8 @@
                 <td>{{story.business_value}}</td>
                 <td>{{story.estimation}}</td>
                 <td>{{story.status}}</td>
+                <td><a href="http://127.0.0.1:5000/story/{{story.id}}"><button type="submit">&#x270E;</button></a></td>
+                <td><a href="http://127.0.0.1:5000/story/{{story.id}}/delete"><button type="submit"><i class="glyphicon glyphicon-trash"></i></button></a></td>
             </tr>
             {% endfor %}
             {% endif %}
