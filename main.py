@@ -20,6 +20,12 @@ def list_stories():
         return redirect("http://127.0.0.1:5000/story")
 
 
+@app.route('/story/<story_id>/delete')
+def delete_user_story(story_id):
+    UserStory.delete().where(UserStory.id == story_id).execute()
+    return redirect("http://127.0.0.1:5000/list")
+
+
 @app.route('/story', methods=["GET"])
 def story():
     title = "- Add new Story"
